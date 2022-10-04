@@ -1,0 +1,124 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+body{
+    /*Задаем правила для всей страницы*/
+    background-color: #f1f1f1;  
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 750px;
+    margin: auto;
+    padding: 0;
+}
+
+body h1{
+    text-align: center;
+}
+
+.header{
+    border: 3px solid black;
+    background-color: pink  ;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.links{
+    text-align: center;
+    font-size: 22px;
+    padding: 7px;
+}
+
+.links a{
+    margin: auto;
+    font-size: 20px;
+    padding: 7px;
+}
+
+
+
+.links :hover{
+    border: 1px solid rgb(235, 67, 198);
+    font-size: 30px;
+    transition: 0.7s;
+}
+
+
+.Photo_Elon{
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+
+.suget{
+    background-color: rgb(197, 197, 197);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.company{
+    background-color: rgb(221, 187, 187);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.photo{
+    text-align: center;
+    padding: 10px;
+    background-color: coral;
+}
+
+.photo img{
+    height: 100px;
+    width: 150px;
+}
+
+.photo a :hover{
+    height: 155px;
+    width: 205px;
+    transition: 0.7s;
+}
+
+
+
+.table-Elon{
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px; /*Растояние между блоками таблицы*/
+    background-color: aquamarine;
+    color: rgb(28, 28, 31);
+    border: 15px solid rgb(120, 210, 226);
+    border-radius: 20px;
+}
+
+.table-Elon th{
+    font-size: 18px;
+    padding: 20px;
+}
+
+.table-Elon td{
+    background-color: rgb(200, 233, 167);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+
+.footer{
+    background-color: chartreuse;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer :hover{
+    font-size: 30px;
+    color: rgb(77, 75, 75);
+    transition: 0.5s;
+}

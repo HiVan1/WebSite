@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Ivan</title>
+</head>
+<body>
+    <div class="nav-menu">
+        <a href="#photo-3">Форма реєстрації</a>
+        <a href="#linkForm">Форма входу</a>
+        <a href="#linkForm">Форма зворотнього зв'язку</a>
+    </div>
+    <div class="header">
+        <div class="nameBlok" id="up">
+            <p>Лабораторна робота №2. Виконавець: Журавльов Іван, ТР-11</p>
+        </div>
+        <div class="title-block">
+            <div class="first">
+                <img src="Image/Photo-1.jpg" alt="Photo-1" id="photo-1">
+                <p>Букмекерська та ігрова діяльність схильна до контролю міжнародних гральних комісій, <img src="Image/Photo-2.jpg" alt="Photo-2" id="photo-2">за допомогою ліцензій або дозволів на право здійснення ігрової онлайн діяльності. Ліцензія – це підтвердження того, що ігровий заклад відповідає вимогам міжнародних ігрових норм. Неліцензійні онлайн казино переслідуються владою. Крім того, їм відмовляють надавати софт офіційні розробники програм.
+                    Будь-яка гра на гроші пов'язана з високими доходами гральних закладів та високими ризиками для гравців. Онлайн ігрова діяльність не є винятком цього правила і очікувано приваблює шахраїв, які ошукують сотні, якщо не тисячі гравців.</p>
+                <img src="Image/Photo-3.jpg" alt="Photo-3" id="photo-3">
+            </div>
+            <div class="second">
+                <img src="Image/Photo_x3.png" alt="" id="one">
+                <img src="Image/Photo_x3.png" alt="" id="two">
+                <img src="Image/Photo_x3.png" alt="" id="three">
+            </div>
+        </div>
+    </div>
+    <div class="register">
+        <div class="nameBlok">
+            <p>Форма реєстрації</p>
+        </div>
+        <form action="#" method="get">
+            <div class="register-input">
+            
+                <div class="first-reg">
+                
+                    <img src="Image/man.png" alt="man" id="icon-man">
+                    <p><input type="file" name="photo"/></p>
+                    <p>Ім'я</p>
+                    <input placeholder="Name" type="text" name="firstName" value=""/>
+                    <p id="linkForm">Прізвище</p>
+                    <input placeholder="Last name" type="text" name="lastName" value=""/>
+                    <p>Стать</p>
+                    <input checked type="radio" name="gender" value="Men"/>Чоловік
+                    <input type="radio" name="gender" value="Women"/>Жінка
+                
+                    <p>Вік</p>
+                    <input type="number" step="1" min="1" max="90" name="age" value="18">
+                    <p>Дата народження</p>
+                    <p><input type="date" id="date" name="date"/></p>
+                    <button type="submit">Зареєструватися</button>
+                
+            </div>
+            <div class="second-reg">
+                
+                    <p>Країна проживання</p>
+                    <select name="country">
+                        <option value="UA">Ураїна</option>
+                        <option selected value="US">США</option>
+                        <option value="SK">Словаччина</option>
+                        <option value="TR">Туреччина</option>
+                        <option value="FR">Франція</option>
+                        <option value="CZ">Чехія</option>
+                    </select>
+                    <p>Номер телефону</p>
+                    <input type="tel" name="password" value="+380()"/>
+                    <p>Соцмережа</p>
+                    <input placeholder="Social network link" type="text" name="password" value=""/>
+                    <p>Електронна пошта</p>
+                    <input placeholder="name@gmail.com" type="text" name="password" value=""/>
+                    <p>Пароль</p>
+                    <input placeholder="1234" type="text" name="passwordInput" value=""/>
+                    <p><input type="checkbox" name="ok" value="yes"/> Згідні з умовами?</p>
+                    <button type="reset">Відміна</button>
+                
+            </div>
+            
+            
+        </div>
+        </form>
+        
+    </div>
+
+    <div class="input">
+        <form action="#" method="get">
+            <div class="nameBlok">
+                <p>Форма входу</p>
+            </div>
+            <div>
+                <input placeholder="Login" type="text" name="login" value=""/>
+            </div>
+            <div>
+                <input placeholder="Password" type="password" name="password" value=""/>
+            </div>
+            <button type="submit">Вхід</button>
+        </form>
+    </div>
+
+    <div class="feedback">
+        <div class="nameBlok">
+            <p>Зворотній зв'язок</p>
+        </div>
+        <form action="#" method="get">
+            <div class="feedbackInput">
+                <div class="leftFeedback">
+                    <div>
+                        <input placeholder="Name"  type="text" name="nameFeedback" value=""/>
+                    </div>
+                    <div>
+                        <input placeholder="name@gmail.com" type="text" name="emailFeedback" value=""/> 
+                    </div>
+                    <div>
+                        <select name="themaList">
+                            <option value="one">Тема 1</option>
+                            <option value="two">Тема 2</option>
+                            <option value="three">Тема 3</option>
+                            <option value="four">Тема 4</option>
+                            <option value="five">Тема 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rightFeedback">
+                    <div>
+                        <textarea placeholder="Input" name="feedbackText" cols="50" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="buttomOk">
+                <button type="submit">Відправити</button>
+            </div>
+            
+        </form>
+        
+    </div>
+
+    <div class="contact">
+        <div>
+            <p>Посилання на соц. мережі</p>
+        </div>
+        <div>
+            <a href="#"><img src="Image/instagramIcon.png" alt="inst"></a>
+            <a href="#"><img src="Image/facebookIcon.png" alt="face"></a>
+            <a href="#"><img src="Image/linkedinIcon.png" alt="linked"></a>
+            <a href="#"><img src="Image/telegramIcon.png" alt="teleg"></a>
+        </div>
+    </div>
+    <div class="bottom">
+        <a href="#up"><img src="Image/upButtom.png" alt=""></a>
+    </div>
+
+</body>
+</html>
