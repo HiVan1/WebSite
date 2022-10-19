@@ -1,0 +1,30 @@
+.registration{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    max-width: 100%;
+}
+
+.registration_group{
+    /* position: relative; */
+    margin-bottom: 25px;
+}
+
+.registration_input{
+    width: 100%;
+    /* padding-bottom: 10px; */
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.registration_input:focus,
+.registration_input:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+
