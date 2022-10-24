@@ -1,6 +1,6 @@
 body{
     /* background-color: #f1f1f1;*/
-    background-image: url(Image/casino.jpg);
+/*     background-image: url(Image/casino.jpg); */
     font-size: 16px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     max-width: 900px;
@@ -16,7 +16,7 @@ a{
 
 
 .nav-menu{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     background-color: bisque;
@@ -72,6 +72,10 @@ a{
 #photo-1{
     float: left;
     margin: 7px;
+}
+
+#photo-1:hover{
+    z-index: 10;
 }
 
 #photo-2{
