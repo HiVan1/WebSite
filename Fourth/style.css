@@ -1,0 +1,41 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: black;
+}
+.header{
+    text-align: center;
+    background-color: rgb(211, 233, 253);
+    padding: 50px;
+}
+
+.section{
+    padding: 15px;
+    padding-left: 100px;
+    background-color: rgb(214, 214, 214);
+}
+
+.hero{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.zoneOne{
+    border: 1px solid rgb(236, 206, 206);
+    width: 90%;
+    height: 50px;
+    margin: 50px;
+}
+
+.zoneTwo{
+    border: 1px solid rgb(236, 206, 206);
+    width: 90%;
+    height: 50px;
+    margin: 50px;
+}
+
+.something{
+
+}
+        
