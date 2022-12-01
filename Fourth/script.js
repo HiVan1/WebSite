@@ -57,8 +57,37 @@ document.querySelector('.b-9').addEventListener('click', ()=>{
     document.querySelector('.out-9').innerHTML = 'Your answer ' + dataText;
 });
 
-document.querySelector('.form').addEventListener('submit', (event)=>{
+// document.querySelector('.singInForm').addEventListener('submit', (event)=>{
+//     event.preventDefault();
+//     const form = document.querySelector('.singInForm');
+//     // console.log(form.elements.myCheckbox.value);
+//     let userName = form.elements.singInName.value;
+//     const userPassword = form.elements.singInPassword.value;
+//     document.querySelector('.outPutNameUser').innerHTML = 'Hello! ' + userName;
+// });
+
+
+
+
+function makeUser(name, password){
+    return {
+        name: name,
+        password: password,
+    };
+}
+
+
+
+document.querySelector('.singInForm').addEventListener('submit', (event)=>{
     event.preventDefault();
-    const form = document.querySelector('.form');
-    console.log(form.elements.myCheckbox.value);
+    const form = document.querySelector('.singInForm');
+    // console.log(form.elements.myCheckbox.value);
+    let userName = form.elements.singInName.value;
+    let userPassword = form.elements.singInPassword.value;
+    document.querySelector('.outPutNameUser').innerHTML = 'Hello! ' + userName;
+
+    let user = makeUser(userName, userPassword);
+    console.log('User Name = ' + user.name);
+    console.log('User Pasw = ' + user.password);
+
 });
