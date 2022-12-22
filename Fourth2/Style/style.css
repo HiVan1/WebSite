@@ -1,0 +1,140 @@
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+    color: black;
+}
+
+
+.header{
+    background-color: rgb(211, 233, 253);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+/* +++++++++++++++++++++++++++++++++++ Input For User +++++++++++++++++++++++++++++++++++*/
+
+.inputForUser {
+    display: flex;
+    justify-content: space-around;
+
+    /* background-color: rgb(177, 255, 229); */
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.paragraph{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.inputHeaderForm{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.inputHeaderForm._error {
+    box-shadow: 0 0 15px rgb(247, 4, 4);
+}
+
+/* +++++++++++++++++++++++++++++++++++ BODY +++++++++++++++++++++++++++++++++++*/
+
+.uotputRatingUser{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Zen Dots';
+    margin: 25px 0px;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;    
+    padding: 20px;
+}
+
+
+.button{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: rgb(10, 10, 10);
+    background-color: rgb(179, 241, 198);
+    border: 1px solid rgb(61, 85, 58);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.photoExample{
+    height: 100px;
+    border-radius: 5px;
+}
+
+.section{
+    padding: 15px;
+    /* padding-left: 100px; */
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(172, 145, 145);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.secDiv{
+    margin: 5px;
+}
+
+/* ================ DRAG & DROP ================*/
+        
+.elem {
+    /* width: 100px;
+    height: 100px; */
+    /* border: 1px solid red; */
+    /* margin-right: 7px; */
+    border-bottom: 1px solid black;
+    /* border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; */
+}
+
+.testText{
+    display: flex;
+}
+
+#answ{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(77, 77, 77);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#parent {
+    min-width: 50px;
+    min-height: 15px;
+    max-width: auto;
+    max-height: auto;
+    /* margin-right: 5px; */
+    /* border: 1px solid black ; */
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+}
+
+.correctAnswerDragAndDrop {
+    min-width: 50px;
+    min-height: 15px;
+    max-width: auto;
+    max-height: auto;
+    /* margin-right: 5px; */
+    /* border: 1px solid black ; */
+    border-bottom: 1px solid rgb(0, 255, 13);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+}
+
+
+.footterButton{
+    display: flex;
+    justify-content: space-around;
+}

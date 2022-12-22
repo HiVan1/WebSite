@@ -1,0 +1,22 @@
+@media screen and (max-width: 1025px) {
+    body{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .photoExample{
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    body{
+        font-size: 14px;
+    }
+    .photoExample{
+        height: 50px;
+    }
+}
