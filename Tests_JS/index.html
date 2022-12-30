@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <title>TestJS</title>
+</head>
+<body>
+    <div class="header" id="up">
+        <h3><b>Тема</b>: <i>Основы JS. Циклы, условные выражения, пользовательские функции</i></h3>       
+    </div>
+    
+
+    <form class="formTest">
+        <div class="inputForUser">
+            <div class="inputDiv">
+                <p class="paragraph">Введите своё имя</p>
+                <input type="text" placeholder="Ivan" name="inputForUserName" class="inputHeaderForm _req _name">
+            </div>
+            <div class="inputDiv">
+                <p class="paragraph">Введите почту для отправки результатов</p>
+                <input type="text" placeholder="nameEmail@gmail.com" name="inputForUserEmail" class="inputHeaderForm _req _email" id="mail">
+            </div>
+        </div>
+    
+        <section class="section" data-right="3">
+            <p>Какие конструкции для циклов есть в javascript?</p>
+            <div class="secDiv"><input type="radio" name="radioQ1" value="1">for while</div>
+            <div class="secDiv"><input checked type="radio" name="radioQ1" value="2">for</div>
+            <div class="secDiv"><input type="radio" name="radioQ1" value="3">for, while, do...while.</div>
+        </section>
+    
+    
+        <section class="section" data-right="4">
+            <p>Чему равно <i>i</i> в коце кода?</p>
+            <div><img src="/Image/code's_screen.png" alt="code" class="photoExample"></div>
+            <div class="secDiv"><input checked type="radio" name="radioQ2" value="1">undefined</div>
+            <div class="secDiv"><input type="radio" name="radioQ2" value="2">9</div>
+            <div class="secDiv"><input type="radio" name="radioQ2" value="3">10</div>
+            <div class="secDiv"><input type="radio" name="radioQ2" value="4">нет такой переменное после цикла</div>
+        </section>
+    
+    
+        <section class="section" data-right="4">
+            <p>Сколько параметров можно передать функции ?</p>
+            <div class="secDiv"><input type="radio" name="radioQ3" value="1">Ровно столько, сколько указано в определении функции.</div>
+            <div class="secDiv"><input checked type="radio" name="radioQ3" value="2">Сколько указано в определении функции или меньше.</div>
+            <div class="secDiv"><input type="radio" name="radioQ3" value="3">Сколько указано в определении функции или больше.</div>
+            <div class="secDiv"><input type="radio" name="radioQ3" value="4">Любое количество.</div>
+        </section>
+    
+    
+        <section class="section" data-right="1">
+            <p>Объявлена функция:<br><i>function F() {}</i><br>Верно ли, что F instanceof Function?</p>
+            <div class="secDiv"><input type="radio" name="radioQ4" value="1">Да.</div>
+            <div class="secDiv"><input checked type="radio" name="radioQ4" value="2">Нет.</div>
+        </section>
+    
+
+        <section class="section" data-right="2">
+            <p>Что выведет код ниже?</p>
+            <div><img src="/Image/code's_screen-1.png" alt="code" class="photoExample"></div>
+            <div class="secDiv"><input type="radio" name="radioQ5" value="1">1, затем 0.</div>
+            <div class="secDiv"><input type="radio" name="radioQ5" value="2">0, затем 1.</div>
+            <div class="secDiv"><input type="radio" name="radioQ5" value="3">В коде ошибка.</div>
+            <div class="secDiv"><input checked type="radio" name="radioQ5" value="4">Зависит от браузера.</div>
+        </section>
+
+
+
+        <section class="section" data-right="1">
+            <p>Чему равно a + b + c?</p>
+            let a = 1;<br>
+            let b = { toString() {return '1'} };<br>
+            let c = 1;<br>
+            <div>
+                <select class="select" name="myselect1">
+                    <option value="2">3</option>
+                    <option value="1">111</option>
+                    <option value="3">11[object Object]</option>
+                    <option value="4">2[object Object]</option>
+                </select>
+            </div>
+        </section>
+
+
+        <section class="section" data-right="2">
+            <p>Когда у элемента гарантированно совпадают offsetHeight и clientHeight?</p>
+            <div>
+                <select class="select" name="myselect2">
+                    <option value="1">Когда у элемента нет border.</option>
+                    <option value="3">Когда у элемента нет border, padding и margin.</option>
+                    <option value="4">Когда у элемента нет прокрутки.</option>
+                    <option value="2">Когда у элемента нет border и padding.</option>
+                </select>
+            </div>    
+        </section>
+
+
+        <section class="section" data-right="1">
+            <p>Можно ли инициировать DOM-событие из javascript?</p>
+            <p>Например, сэмулировать клик мышкой на элементе, чтобы javascript-код кликнул за пользователя, и сработали соответствующие обработчики.</p>
+            <div>
+                <select class="select" name="myselect3">
+                    <option value="1">Да, можно</option>
+                    <option value="2">Нет, нельзя</option>
+                </select>
+            </div>    
+        </section>        
+        
+    
+        <section class="section" data-right="4">
+            <p>Какие варианты правильно объявляют функцию f, возвращающую сумму двух аргументов ?</p>
+    
+            <div class="setDiv"><input type="checkbox" class="q5" value="1" name="checkboxQ1" data-right="1">let f = function(a,b) { return a+b }</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="2" name="checkboxQ1" data-right="2">let f = new Function("a,b", "return a+b")</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="3" name="checkboxQ1" data-right="3">let f = new Function("a,b", "return a+b")</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="4" name="checkboxQ1" data-right="4">let f = new Function("a", "b", "return a+b")</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="5" name="checkboxQ1" data-right="0">let f = (a, b) => a + b</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="6" name="checkboxQ1" data-right="0">let f = (a, b) => { a + b }</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="7" name="checkboxQ1" data-right="0">Никакие</div>
+        </section>      
+    
+        
+        <section class="section" data-right="3">
+            <p>Какие из этих вариантов задают массив из элементов «a», «b»?</p>
+            <div class="setDiv"><input type="checkbox" class="q5" value="1" name="checkboxQ2" data-right="1">let a = new Array("a","b")</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="2" name="checkboxQ2" data-right="0">let a = { "a", "b" }</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="3" name="checkboxQ2" data-right="0">let a = ( "a", "b" )</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="4" name="checkboxQ2" data-right="4">let a = [ "a", "b" ]</div>
+            <div class="setDiv"><input type="checkbox" class="q5" value="5" name="checkboxQ2" data-right="5">let a = "a,b".split(",")</div>
+        </section>
+    
+        
+        <section class="section">
+            <p>Вставьте слова в правильной последовательности</p>
+            
+            <div class="testDrag">
+                <div id="answ">
+                    <div class="elem" draggable="true">.querySelector('.className')</div>
+                    <div class="elem" draggable="true">ducument</div>
+                    <div class="elem" draggable="true">.addEventListener</div>
+                </div>
+                <div class="testText">
+                    <div id="parent"></div>('submit', (event) =>{});
+                </div>
+            </div>
+        </section>
+
+        <div class="footterButton">
+            <div><button type="submit" class="button" >Завершить</button></div>
+
+        </div>
+    </form>
+
+    <div class="uotputRatingUsers">
+        <div class="yourRating"></div>
+        <div class="GPA"></div>
+    </div>
+
+    <script src="Student.js"></script>
+    <script src="Succed.js"></script>
+    <script src="scriptTask.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>
